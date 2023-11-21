@@ -1,17 +1,11 @@
 package snake.graphics.window.internal;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import snake.graphics.drawable.Rect;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
 
 public class JFrameGameWindow extends JFrame {
-    private static final Logger LOGGER = LoggerFactory.getLogger(JFrameGameWindow.class);
-
     private final Image buffer;
     private final Graphics graphics;
     private final Renderer renderer;

@@ -14,9 +14,9 @@ import static java.time.Instant.EPOCH;
 
 public class KeyHandler {
     private final JFrame owner;
+    private final int keyEventInterval;
     private KeyListener currentKeyListener;
     private Instant lastKeyboardEventTime;
-    private int keyEventInterval;
 
     public KeyHandler(JFrame owner, int keyEventInterval) {
         this.owner = owner;

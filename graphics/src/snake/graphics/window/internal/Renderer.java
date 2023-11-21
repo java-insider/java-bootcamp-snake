@@ -5,7 +5,6 @@ import snake.graphics.drawable.Drawable;
 
 import java.awt.*;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import static java.util.Collections.synchronizedList;

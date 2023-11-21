@@ -37,11 +37,6 @@ public class Rect extends Drawable {
         return new Dimension(rectangle.width, rectangle.height);
     }
 
-    public void location(Dimension dimension) {
-        rectangle.width = dimension.width();
-        rectangle.height = dimension.height();
-    }
-
     public void dimension(int width, int height) {
         rectangle.width = width;
         rectangle.height = height;
