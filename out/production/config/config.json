@@ -1,0 +1,35 @@
+{
+  "window": {
+    "width": 400,
+    "height": 400,
+    "title": "Snake!",
+    "backgroundColor": "BLACK"
+  },
+  "application": {
+    "minMillisBetweenKeyPressedEvents": 40
+  },
+  "food": {
+    "sizeInPixels": 6,
+    "color": "GREEN"
+  },
+  "gameOver": {
+    "textTemplate": "GAME OVER! %d PONTO(S)",
+    "color": "RED",
+    "positionOffset": {
+      "x": -80,
+      "y": 0
+    }
+  },
+  "snake": {
+    "initialPieces": 30,
+    "pieceSizeInPixels": 8,
+    "initialPosition": {
+      "x": 80,
+      "y": 30
+    },
+    "elongatePieces": 5,
+    "color": "RED",
+    "initialSpeed": 20,
+    "incrementSpeed": 1
+  }
+}

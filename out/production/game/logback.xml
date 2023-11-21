@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+    <appender name="consoleGame" class="ch.qos.logback.core.ConsoleAppender">
+        <target>System.out</target>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>
+                %green(%d{HH:mm:ss.SSS}) [%t] %highlight(%-5level) %logger{36} - %boldWhite(%msg%n)
+            </Pattern>
+        </encoder>
+    </appender>
+
+    <appender name="consoleGraphics" class="ch.qos.logback.core.ConsoleAppender">
+        <target>System.out</target>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern>
+                %yellow(%d{HH:mm:ss.SSS}) [%t] %highlight(%-5level) %logger{36} - %boldWhite(%msg%n)
+            </Pattern>
+        </encoder>
+    </appender>
+
+    <logger name="snake.game" level="DEBUG">
+        <appender-ref ref="consoleGame" />
+    </logger>
+
+    <logger name="snake.graphics" level="DEBUG">
+        <appender-ref ref="consoleGraphics" />
+    </logger>
+
+</configuration>
